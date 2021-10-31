@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    
+
+<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Eres Magia Accesorios</title>
+</head>
+
+<body>
+
+    <main>
+       
+        <header>
+
+            <div class="header_item"><a href="index.html"><img src="../imagenes/1_20210910_233709_0000.png" alt=""
+                        class="logo_img"></a></div>
+
+            <div class="header_item"><input class="busca_btn" type="search" placeholder="Qué estás buscando?"></div>
+            <div class="header_item">
+                <div class="iconos"><i class="bx bx-conversation"></i><span class="texto-icono">Ayuda</span> </div>
+                <div class="iconos"><i class="bx bx-user"></i></i><span class="texto-icono">Mi cuenta</span> </div>
+                <div class="iconos"><i class='bx bx-cart'></i><span class="texto-icono">Mi carrito</span> </div>
+            </div>
+
+
+        </header>
+        
+        <nav class="main-nav">
+            <span class="nav-bar" id="btnMenu"><i class='bx bx-menu'></i>Menú</span>
+            <ul class="menu" id="menu">
+                <li class="menu_item"><a href="/paginas/index.html" class="menu_link">Inicio</a></li>
+                <li class="menu_item container_submenu">
+                    <a href="/paginas/productos.html" class="menu_link submenu_btn">Productos <i
+                            class='bx bx-chevron-down'></i></a>
+                    <ul class="submenu">
+                        <li class="menu_item"><a href="" class="menu_link">Pulseras</a></li>
+                        <li class="menu_item"><a href="" class="menu_link">Collares</a></li>
+                        <li class="menu_item"><a href="" class="menu_link">Aros</a></li>
+                        <li class="menu_item"><a href="" class="menu_link">Anillos</a></li>
+                    </ul>
+
+                </li>
+                <li class="menu_item"><a href="/paginas/contacto.html" class="menu_link">Contacto</a></li>
+            </ul>
+        </nav>
+
+    
+
+        <section id="esconder">
+           
+            <div class="carru-container">
+                <div class="carru_item fade"><img src="../imagenes/imagen1.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen2.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen3.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen9.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen5.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen6.jpeg" alt="" class="carru_img"></div>
+                <div class="carru_item fade"><img src="../imagenes/imagen7.jpeg" alt="" class="carru_img"></div>
+
+                <i id="prev" onclick="show_image(-1)" class="bx bx-chevron-left"></i>
+                <i id="next" onclick="show_image(1)" class="bx bx-chevron-right" ></i>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="presentacion">
+                <p class="titulo">
+                    Eres Magia Accesorios
+                </p>
+                <p class="cuerpo">
+                    Eres Magia es un emprendimiento de accesorios minorista y mayorista que busca llevar a nuestros clientes las últimas tendencias, como así también brindarle la posibilidad de diseñar los accesorios a su gusto. 
+                    <br>Vas a poder elegir entre anillos, collares, aros y pulseras, de diversos materiales, entre ellos plata 925, acero quirurgico, acero blanco y alpaca.
+                    <br>¡Encontrá calidad en los productos que te ofrecemos!
+                    
+                </p>
+            </div>
+     
+
+        </section>
+
+        <aside id="esconderaside">
+            <div class="publi-container" >
+                <div class="publi_item">
+                    <img src="../imagenes/nueva_coleccion.jpeg" alt="" class="publi_img">
+                </div>
+                <div class="publi_item"><img src="../imagenes/descuentos.jpeg" alt="" class="publi_img">
+                </div>
+                 <div class="publi_item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.07030763407!2d-57.988189857172735!3d-34.92045289881356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1635618583532!5m2!1ses!2sar" allowfullscreen="" loading="lazy" class="publi_img"></iframe>
+                </div>
+                   
+ </div>
+        </aside>
+
+        <footer id="esconderfooter">
+            <div class="iconos-footer">
+                <a class="link-footer" href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
+                <a class="link-footer" href="https://www.facebook.com/"><i class="bx bxl-facebook-circle"></i></a>
+                <span class="span-footer">Derechos Reservados</span>
+        </footer>
+    
+    </main>
+    <script defer src="../javascript/menu.js"></script>
+    <script defer src="../javascript/script.js"></script>
+</body>
+
+</html>
