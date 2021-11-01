@@ -13,7 +13,7 @@ CloseMenuBtn.addEventListener("click", toggleMenu)
 */
 const OpenBtn = document.querySelector(".nav-bar");
 function myFunction() {
-    var y = document.getElementById("esconder", "esconderaside");
+    var y = document.getElementById("esconder");
     
     if (y.style.display === "none") {
         y.style.display = "block";
@@ -44,6 +44,9 @@ function myFunctionfooter() {
     }
 }
 OpenBtn.addEventListener("click", myFunctionfooter)
+
+
+
 
 
 const btnMenu = document.querySelector("#btnMenu"); 

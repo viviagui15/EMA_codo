@@ -41,16 +41,6 @@ header {
 nav {
     grid-area: na;}
 
-.nav-bar{
-
-    padding: 20px;
-    display: block; 
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-    width: 100%;
-}
-
 .menu .submenu {
    list-style: none;
     margin: 0;
@@ -59,10 +49,9 @@ nav {
 }
 
 .menu{
-   
-    width: 100%;
-    margin-left: -100%; 
-    transition: all 0.5s; 
+   width: 100%;
+   transition: all 0.5s; 
+ 
     
      }
      
@@ -80,26 +69,52 @@ nav {
     background: #D7cdbb;
 }
 
+
 .submenu .menu_link:hover{
     background: #D7cdbb;
 }
 
+.menu li:hover > ul{
+    display: block;
+    background-color:#D7cdbb;
+    
+    
+  }
+
 .submenu{
-    height:0; 
-    overflow: hidden;
-    transition: all 0.3s;
+   transition: all 0.3s;
+   top: 150px; 
+   overflow: visible;
+  
+    
 }
+
+
 
 .submenu .menu_link{
 background: #d6c8b1;
 padding-left: 40px;
 }
 
-.mostrar{
-    margin-left: 0;
+
+
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+   
+    display: none;
     
 }
 
+#menu ul li{
+    float: none;
+   
+}
 
 aside {
     grid-area: asi;
@@ -238,9 +253,6 @@ div:nth-child(2) {
     
     
     }
-
-
-
 
     .carru-container{
         position: relative;
@@ -493,7 +505,7 @@ padding: 10px;
 }
     .submenu{
         position: absolute;
-        top: 10px; 
+        top: 190px; 
         width: 180px;
         overflow: visible;
         z-index: 1000; 
@@ -501,7 +513,7 @@ padding: 10px;
       
     }
   
- .menu_link:hover + .submenu{
+    .menu li:hover > ul{
       display: block;
      
       background-color:#D7cdbb;
@@ -605,16 +617,16 @@ padding: 10px;
         position: absolute;
         top: 190px; 
         width: 180px;
-        overflow: visible;
+        
         z-index: 1000; 
         opacity:0; 
       
     }
 
   
- .menu_link:hover + .submenu{
+    .menu li:hover > ul{
       display: block;
-     
+      overflow: visible;
       background-color: #D7cdbb;
        opacity:1;
       
